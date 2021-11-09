@@ -259,3 +259,4 @@ curl -X GET "localhost:9200/_count?pretty" -H 'Content-Type: application/json' -
 }
 '
 
+simple query 
