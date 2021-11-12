@@ -259,4 +259,20 @@ curl -X GET "localhost:9200/_count?pretty" -H 'Content-Type: application/json' -
 }
 '
 
+List Elasticsearch Indexes
+curl -X GET "localhost:9200/_cat/indices?v"
+
+Create Eleasticsearch Indexes
+curl -X PUT "localhost:9200/my-index-000001?pretty" -H 'Content-Type: application/json' -d'
+{
+  "settings": {
+    "index": {
+      "number_of_shards": 3,  
+      "number_of_replicas": 2 
+    }
+  }
+}
+'
+
+
 simple query 
