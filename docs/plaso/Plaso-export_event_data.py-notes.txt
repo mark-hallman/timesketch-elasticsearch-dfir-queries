@@ -1,0 +1,2044 @@
+
+
+Clone the log2timeline repo to your local machine.  You will need this code to run the script
+log2timeline/plaso: Super timeline all the things (github.com)
+
+Form withing the log2timeline repo dir structure run the following command.
+python3 ./utils/export_event_data.py > /plaso_dev/data_type_attribute_mapping.txt
+
+You will get the following report
+
+################################################
+PLSRecall:event
+  data_type
+  database_name
+  offset
+  parser
+  query
+  sequence_number
+  username
+
+android:event:call
+  call_type
+  data_type
+  duration
+  name
+  number
+  offset
+  parser
+  query
+
+android:event:last_resume_time
+  component
+  data_type
+  offset
+  package
+  parser
+  query
+
+android:messaging:hangouts
+  body
+  data_type
+  message_status
+  message_type
+  offset
+  parser
+  query
+  sender
+
+android:messaging:sms
+  address
+  body
+  data_type
+  offset
+  parser
+  query
+  sms_read
+  sms_type
+
+android:webviewcache
+  content_length
+  data_type
+  offset
+  parser
+  query
+  url
+
+apache:access
+  data_type
+  http_request
+  http_request_referer
+  http_request_user_agent
+  http_response_bytes
+  http_response_code
+  ip_address
+  offset
+  parser
+  port_number
+  query
+  remote_name
+  server_name
+  user_name
+
+apt:history:line
+  command
+  data_type
+  error
+  offset
+  packages
+  parser
+  query
+  requester
+
+av:mcafee:accessprotectionlog
+  action
+  data_type
+  filename
+  offset
+  parser
+  query
+  rule
+  status
+  trigger_location
+  username
+
+av:symantec:scanlog
+  access
+  action0
+  action1
+  action1_status
+  action2
+  action2_status
+  address
+  backup_id
+  cat
+  cleaninfo
+  clientgroup
+  compressed
+  computer
+  data_type
+  definfo
+  defseqnumber
+  deleteinfo
+  depth
+  description
+  domain_guid
+  domainname
+  err_code
+  event
+  event_data
+  extra
+  file
+  flags
+  groupid
+  guid
+  license_expiration_dt
+  license_feature_name
+  license_feature_ver
+  license_fulfillment_id
+  license_lifecycle
+  license_seats
+  license_seats_delta
+  license_seats_total
+  license_serial_num
+  license_start_dt
+  log_session_guid
+  logger
+  login_domain
+  macaddr
+  new_ext
+  ntdomain
+  offset
+  parent
+  parser
+  quarfwd_status
+  query
+  remote_machine
+  remote_machine_ip
+  scanid
+  snd_status
+  status
+  still_infected
+  time
+  user
+  vbin_id
+  vbin_session_id
+  version
+  virus
+  virus_id
+  virustype
+
+av:trendmicro:scan
+  action
+  data_type
+  filename
+  offset
+  parser
+  path
+  query
+  scan_type
+  threat
+
+av:trendmicro:webrep
+  application_name
+  block_mode
+  credibility_rating
+  credibility_score
+  data_type
+  group_code
+  group_name
+  ip
+  offset
+  parser
+  policy_identifier
+  query
+  threshold
+  url
+
+bash:history:command
+  command
+  data_type
+  offset
+  parser
+  query
+
+bsm:event
+  data_type
+  event_type
+  extra_tokens
+  offset
+  parser
+  query
+  record_length
+  return_value
+
+ccleaner:configuration
+  configuration
+  data_type
+  key_path
+  offset
+  parser
+  query
+
+ccleaner:update
+  data_type
+  key_path
+  offset
+  parser
+  query
+
+chrome:autofill:entry
+  data_type
+  field_name
+  offset
+  parser
+  query
+  usage_count
+  value
+
+chrome:cache:entry
+  data_type
+  offset
+  original_url
+  parser
+  query
+
+chrome:cookie:entry
+  cookie_name
+  data
+  data_type
+  host
+  httponly
+  offset
+  parser
+  path
+  persistent
+  query
+  secure
+  url
+
+chrome:extension_activity:activity_log
+  action_type
+  activity_id
+  api_name
+  arg_url
+  args
+  data_type
+  extension_id
+  offset
+  other
+  page_title
+  page_url
+  parser
+  query
+
+chrome:history:file_downloaded
+  data_type
+  full_path
+  offset
+  parser
+  query
+  received_bytes
+  total_bytes
+  url
+
+chrome:history:page_visited
+  data_type
+  from_visit
+  offset
+  page_transition_type
+  parser
+  query
+  title
+  typed_count
+  url
+  url_hidden
+  visit_source
+
+chrome:preferences:clear_history
+  data_type
+  message
+  offset
+  parser
+  query
+
+chrome:preferences:content_settings:exceptions
+  data_type
+  offset
+  parser
+  permission
+  primary_url
+  query
+  secondary_url
+
+chrome:preferences:extension_installation
+  data_type
+  extension_id
+  extension_name
+  offset
+  parser
+  path
+  query
+
+chrome:preferences:extensions_autoupdater
+  data_type
+  message
+  offset
+  parser
+  query
+
+cups:ipp:event
+  application
+  computer_name
+  copies
+  data_type
+  doc_type
+  job_id
+  job_name
+  offset
+  owner
+  parser
+  printer_id
+  query
+  uri
+  user
+
+docker:json:container
+  action
+  container_id
+  container_name
+  data_type
+  offset
+  parser
+  query
+
+docker:json:container:log
+  container_id
+  data_type
+  log_line
+  log_source
+  offset
+  parser
+  query
+
+docker:json:layer
+  command
+  data_type
+  layer_id
+  offset
+  parser
+  query
+
+dpkg:line
+  body
+  data_type
+  offset
+  parser
+  query
+
+file_history:namespace:event
+  data_type
+  file_attribute
+  identifier
+  offset
+  original_filename
+  parent_identifier
+  parser
+  query
+  usn_number
+
+firefox:cache:record
+  data_size
+  data_type
+  fetch_count
+  frequency
+  info_size
+  location
+  offset
+  parser
+  query
+  request_method
+  request_size
+  response_code
+  url
+  version
+
+firefox:cookie:entry
+  cookie_name
+  data
+  data_type
+  host
+  httponly
+  offset
+  parser
+  path
+  query
+  secure
+  url
+
+firefox:downloads:download
+  data_type
+  full_path
+  mime_type
+  name
+  offset
+  parser
+  query
+  received_bytes
+  referrer
+  temporary_location
+  total_bytes
+  url
+
+firefox:places:bookmark
+  data_type
+  host
+  offset
+  parser
+  places_title
+  query
+  title
+  type
+  url
+  visit_count
+
+firefox:places:bookmark_annotation
+  content
+  data_type
+  offset
+  parser
+  query
+  title
+  url
+
+firefox:places:bookmark_folder
+  data_type
+  offset
+  parser
+  query
+  title
+
+firefox:places:page_visited
+  data_type
+  from_visit
+  hidden
+  host
+  offset
+  parser
+  query
+  title
+  typed
+  url
+  visit_count
+  visit_type
+
+fs:mactime:line
+  data_type
+  filename
+  inode
+  md5
+  mode_as_string
+  offset
+  parser
+  query
+  size
+  symbolic_link_target
+  user_gid
+  user_sid
+
+fs:ntfs:usn_change
+  data_type
+  file_attribute_flags
+  file_reference
+  filename
+  offset
+  parent_file_reference
+  parser
+  query
+  update_reason_flags
+  update_sequence_number
+  update_source_flags
+
+fs:stat
+  data_type
+  display_name
+  file_entry_type
+  file_size
+  file_system_type
+  filename
+  inode
+  is_allocated
+  offset
+  parser
+  query
+
+fs:stat:ntfs
+  attribute_type
+  data_type
+  display_name
+  file_attribute_flags
+  file_reference
+  file_system_type
+  filename
+  is_allocated
+  name
+  offset
+  parent_file_reference
+  parser
+  path_hints
+  query
+  symbolic_link_target
+
+gdrive:snapshot:cloud_entry
+  data_type
+  document_type
+  offset
+  parser
+  path
+  query
+  shared
+  size
+  url
+
+gdrive:snapshot:local_entry
+  data_type
+  offset
+  parser
+  path
+  query
+  size
+
+gdrive_sync:log:line
+  data_type
+  log_level
+  message
+  offset
+  parser
+  pid
+  query
+  source_code
+  thread
+
+googlelog:log
+  data_type
+  file_name
+  line_number
+  message
+  offset
+  parser
+  priority
+  query
+  thread_identifier
+
+iis:log:line
+  data_type
+  offset
+  parser
+  query
+
+imessage:event:chat
+  attachment_location
+  data_type
+  imessage_id
+  message_type
+  offset
+  parser
+  query
+  read_receipt
+  service
+  text
+
+ios:kik:messaging
+  body
+  data_type
+  displayname
+  message_status
+  message_type
+  offset
+  parser
+  query
+  username
+
+ipod:device:entry
+  data_type
+  device_id
+  offset
+  parser
+  query
+
+java:download:idx
+  data_type
+  idx_version
+  ip_address
+  offset
+  parser
+  query
+  url
+
+kodi:videos:viewing
+  data_type
+  filename
+  offset
+  parser
+  play_count
+  query
+
+linux:utmp:event
+  data_type
+  exit_status
+  hostname
+  ip_address
+  offset
+  parser
+  pid
+  query
+  terminal
+  terminal_identifier
+  type
+  username
+
+mac:appfirewall:line
+  action
+  agent
+  computer_name
+  data_type
+  offset
+  parser
+  process_name
+  query
+  status
+
+mac:asl:event
+  computer_name
+  data_type
+  extra_information
+  facility
+  group_id
+  level
+  message
+  message_id
+  offset
+  parser
+  pid
+  query
+  read_gid
+  read_uid
+  record_position
+  sender
+  user_sid
+
+mac:document_versions:file
+  data_type
+  last_time
+  name
+  offset
+  parser
+  path
+  query
+  user_sid
+  version_path
+
+mac:keychain:application
+  account_name
+  comments
+  data_type
+  entry_name
+  offset
+  parser
+  query
+  ssgp_hash
+  text_description
+
+mac:keychain:internet
+  account_name
+  comments
+  data_type
+  entry_name
+  offset
+  parser
+  protocol
+  query
+  ssgp_hash
+  text_description
+  type_protocol
+  where
+
+mac:knowledgec:application
+  bundle_identifier
+  data_type
+  duration
+  offset
+  parser
+  query
+
+mac:knowledgec:safari
+  bundle_identifier
+  data_type
+  duration
+  offset
+  parser
+  query
+  title
+  url
+
+mac:notes:note
+  data_type
+  offset
+  parser
+  query
+  text
+  title
+
+mac:notificationcenter:db
+  body
+  bundle_name
+  data_type
+  offset
+  parser
+  presented
+  query
+  subtitle
+  title
+
+mac:securityd:line
+  caller
+  data_type
+  facility
+  level
+  message
+  offset
+  parser
+  query
+  security_api
+  sender
+  sender_pid
+
+mac:utmpx:event
+  data_type
+  hostname
+  offset
+  parser
+  pid
+  query
+  terminal
+  terminal_identifier
+  type
+  username
+
+mac:wifilog:line
+  action
+  agent
+  data_type
+  function
+  offset
+  parser
+  query
+  text
+
+mackeeper:cache
+  data_type
+  description
+  event_type
+  offset
+  parser
+  query
+  record_id
+  room
+  text
+  url
+  user_name
+  user_sid
+
+macos:fseventsd:record
+  data_type
+  event_identifier
+  flags
+  node_identifier
+  offset
+  parser
+  path
+  query
+
+macos:tcc_entry
+  allowed
+  client
+  data_type
+  offset
+  parser
+  prompt_count
+  query
+  service
+
+macosx:application_usage
+  app_version
+  application
+  bundle_id
+  count
+  data_type
+  offset
+  parser
+  query
+
+macosx:lsquarantine
+  agent
+  data
+  data_type
+  offset
+  parser
+  query
+  url
+
+metadata:openxml
+  app_version
+  author
+  creating_app
+  data_type
+  doc_security
+  hyperlinks_changed
+  i4
+  last_saved_by
+  links_up_to_date
+  number_of_characters
+  number_of_characters_with_spaces
+  number_of_lines
+  number_of_pages
+  number_of_paragraphs
+  number_of_words
+  offset
+  parser
+  query
+  revision_number
+  scale_crop
+  shared_doc
+  template
+  total_time
+
+msie:webcache:container
+  access_count
+  cache_identifier
+  cached_file_size
+  cached_filename
+  container_identifier
+  data_type
+  entry_identifier
+  file_extension
+  offset
+  parser
+  query
+  redirect_url
+  request_headers
+  response_headers
+  sync_count
+  url
+
+msie:webcache:containers
+  container_identifier
+  data_type
+  directory
+  name
+  offset
+  parser
+  query
+  set_identifier
+
+msie:webcache:leak_file
+  cached_filename
+  data_type
+  leak_identifier
+  offset
+  parser
+  query
+
+msie:webcache:partitions
+  data_type
+  directory
+  offset
+  parser
+  partition_identifier
+  partition_type
+  query
+  table_identifier
+
+msiecf:leak
+  cache_directory_index
+  cache_directory_name
+  cached_file_size
+  cached_filename
+  data_type
+  offset
+  parser
+  query
+  recovered
+
+msiecf:redirected
+  data_type
+  offset
+  parser
+  query
+  recovered
+  url
+
+msiecf:url
+  cache_directory_index
+  cache_directory_name
+  cached_file_size
+  cached_filename
+  data_type
+  http_headers
+  number_of_hits
+  offset
+  parser
+  query
+  recovered
+  url
+
+networkminer:fileinfos:file
+  data_type
+  destination_ip
+  destination_port
+  file_details
+  file_md5
+  file_path
+  file_size
+  filename
+  offset
+  parser
+  query
+  source_ip
+  source_port
+
+olecf:dest_list:entry
+  birth_droid_file_identifier
+  birth_droid_volume_identifier
+  data_type
+  droid_file_identifier
+  droid_volume_identifier
+  entry_number
+  hostname
+  offset
+  parser
+  path
+  pin_status
+  query
+
+olecf:item
+  data_type
+  name
+  offset
+  parser
+  query
+  size
+
+opera:history:entry
+  data_type
+  description
+  offset
+  parser
+  popularity_index
+  query
+  title
+  url
+
+opera:history:typed_entry
+  data_type
+  entry_selection
+  entry_type
+  offset
+  parser
+  query
+  url
+
+p2p:bittorrent:transmission
+  data_type
+  destination
+  offset
+  parser
+  query
+  seedtime
+
+p2p:bittorrent:utorrent
+  caption
+  data_type
+  offset
+  parser
+  path
+  query
+  seedtime
+
+pe
+  data_type
+  dll_name
+  imphash
+  offset
+  parser
+  pe_type
+  query
+  section_names
+
+plist:key
+  data_type
+  desc
+  hostname
+  key
+  offset
+  parser
+  query
+  root
+  username
+
+popularity_contest:log:event
+  data_type
+  mru
+  offset
+  package
+  parser
+  query
+  record_tag
+
+popularity_contest:session:event
+  data_type
+  details
+  hostid
+  offset
+  parser
+  query
+  session
+  status
+
+safari:cookie:entry
+  cookie_name
+  cookie_value
+  data_type
+  flags
+  offset
+  parser
+  path
+  query
+  url
+
+safari:history:visit
+  data_type
+  display_title
+  offset
+  parser
+  query
+  title
+  url
+  visit_count
+  was_http_non_get
+
+safari:history:visit_sqlite
+  data_type
+  host
+  offset
+  parser
+  query
+  title
+  url
+  visit_count
+  visit_redirect_source
+  was_http_non_get
+
+santa:diskmount
+  action
+  appearance
+  bsd_name
+  bus
+  data_type
+  dmg_path
+  fs
+  model
+  mount
+  offset
+  parser
+  query
+  serial
+  volume
+
+santa:execution
+  action
+  certificate_common_name
+  certificate_hash
+  data_type
+  decision
+  gid
+  group
+  mode
+  offset
+  parser
+  pid
+  ppid
+  process_arguments
+  process_hash
+  process_path
+  quarantine_url
+  query
+  reason
+  uid
+  user
+
+santa:file_system_event
+  action
+  data_type
+  file_new_path
+  file_path
+  gid
+  group
+  offset
+  parser
+  pid
+  ppid
+  process
+  process_path
+  query
+  uid
+  user
+
+selinux:line
+  audit_type
+  body
+  data_type
+  offset
+  parser
+  pid
+  query
+
+setupapi:log:line
+  data_type
+  entry_type
+  exit_status
+  offset
+  parser
+  query
+
+shell:zsh:history
+  command
+  data_type
+  elapsed_seconds
+  offset
+  parser
+  query
+
+skydrive:log:line
+  data_type
+  detail
+  log_level
+  module
+  offset
+  parser
+  query
+  source_code
+
+skydrive:log:old:line
+  data_type
+  log_level
+  offset
+  parser
+  query
+  source_code
+  text
+
+skype:event:account
+  country
+  data_type
+  display_name
+  email
+  offset
+  parser
+  query
+  username
+
+skype:event:call
+  call_type
+  data_type
+  dst_call
+  offset
+  parser
+  query
+  src_call
+  user_start_call
+  video_conference
+
+skype:event:chat
+  data_type
+  from_account
+  offset
+  parser
+  query
+  text
+  title
+  to_account
+
+skype:event:sms
+  data_type
+  number
+  offset
+  parser
+  query
+  text
+
+skype:event:transferfile
+  action_type
+  data_type
+  destination
+  offset
+  parser
+  query
+  source
+  transferred_filename
+  transferred_filepath
+  transferred_filesize
+
+software_management:sccm:log
+  component
+  data_type
+  offset
+  parser
+  query
+  text
+
+sophos:av:log
+  data_type
+  offset
+  parser
+  query
+  text
+
+spotlight:metadata_item
+  content_type
+  data_type
+  file_name
+  file_system_identifier
+  offset
+  parent_file_system_identifier
+  parser
+  query
+
+syslog:comment
+  body
+  data_type
+  offset
+  parser
+  query
+
+syslog:cron:task_run
+  body
+  command
+  data_type
+  hostname
+  offset
+  parser
+  pid
+  query
+  reporter
+  severity
+  username
+
+syslog:line
+  body
+  data_type
+  hostname
+  offset
+  parser
+  pid
+  query
+  reporter
+  severity
+
+syslog:line
+  address
+  authentication_method
+  body
+  data_type
+  fingerprint
+  hostname
+  offset
+  parser
+  pid
+  port
+  protocol
+  query
+  reporter
+  severity
+  username
+
+syslog:ssh:failed_connection
+  address
+  authentication_method
+  body
+  data_type
+  fingerprint
+  hostname
+  offset
+  parser
+  pid
+  port
+  protocol
+  query
+  reporter
+  severity
+  username
+
+syslog:ssh:login
+  address
+  authentication_method
+  body
+  data_type
+  fingerprint
+  hostname
+  offset
+  parser
+  pid
+  port
+  protocol
+  query
+  reporter
+  severity
+  username
+
+syslog:ssh:opened_connection
+  address
+  authentication_method
+  body
+  data_type
+  fingerprint
+  hostname
+  offset
+  parser
+  pid
+  port
+  protocol
+  query
+  reporter
+  severity
+  username
+
+systemd:journal
+  body
+  data_type
+  hostname
+  offset
+  parser
+  pid
+  query
+  reporter
+
+tango:android:contact
+  birthday
+  data_type
+  distance
+  first_name
+  friend_request_message
+  friend_request_type
+  gender
+  is_friend
+  last_name
+  offset
+  parser
+  query
+  status
+
+tango:android:conversation
+  conversation_identifier
+  data_type
+  offset
+  parser
+  query
+
+tango:android:message
+  data_type
+  direction
+  message_identifier
+  offset
+  parser
+  query
+
+task_scheduler:task_cache:entry
+  data_type
+  key_path
+  offset
+  parser
+  query
+  task_identifier
+  task_name
+
+twitter:android:contact
+  data_type
+  description
+  followers
+  friends
+  identifier
+  image_url
+  location
+  name
+  offset
+  parser
+  query
+  statuses
+  user_identifier
+  username
+  web_url
+
+twitter:android:search
+  data_type
+  name
+  offset
+  parser
+  query
+  search_query
+
+twitter:android:status
+  author_identifier
+  content
+  data_type
+  favorited
+  identifier
+  offset
+  parser
+  query
+  retweeted
+  username
+
+twitter:ios:contact
+  data_type
+  description
+  followers_count
+  following
+  following_count
+  location
+  name
+  offset
+  parser
+  profile_url
+  query
+  screen_name
+  url
+
+twitter:ios:status
+  data_type
+  favorite_count
+  favorited
+  name
+  offset
+  parser
+  query
+  retweet_count
+  text
+  user_id
+
+vsftpd:log
+  data_type
+  offset
+  parser
+  query
+  text
+
+webview:cookie
+  cookie_name
+  data
+  data_type
+  host
+  offset
+  parser
+  path
+  query
+  secure
+  url
+
+windows:evt:record
+  computer_name
+  data_type
+  event_category
+  event_identifier
+  event_type
+  facility
+  message_identifier
+  offset
+  parser
+  query
+  record_number
+  recovered
+  severity
+  source_name
+  strings
+  user_sid
+
+windows:evtx:record
+  computer_name
+  data_type
+  event_identifier
+  event_level
+  message_identifier
+  offset
+  parser
+  query
+  record_number
+  recovered
+  source_name
+  strings
+  user_sid
+  xml_string
+
+windows:firewall:log_entry
+  action
+  data_type
+  dest_ip
+  dest_port
+  flags
+  icmp_code
+  icmp_type
+  info
+  offset
+  parser
+  path
+  protocol
+  query
+  size
+  source_ip
+  source_port
+  tcp_ack
+  tcp_seq
+  tcp_win
+
+windows:lnk:link
+  birth_droid_file_identifier
+  birth_droid_volume_identifier
+  command_line_arguments
+  data_type
+  description
+  drive_serial_number
+  drive_type
+  droid_file_identifier
+  droid_volume_identifier
+  env_var_location
+  file_attribute_flags
+  file_size
+  icon_location
+  link_target
+  local_path
+  network_path
+  offset
+  parser
+  query
+  relative_path
+  volume_label
+  working_directory
+
+windows:metadata:deleted_item
+  data_type
+  drive_number
+  file_size
+  offset
+  original_filename
+  parser
+  query
+  record_index
+  short_filename
+
+windows:prefetch:execution
+  data_type
+  executable
+  mapped_files
+  number_of_volumes
+  offset
+  parser
+  path_hints
+  prefetch_hash
+  query
+  run_count
+  version
+  volume_device_paths
+  volume_serial_numbers
+
+windows:registry:amcache
+  company_name
+  data_type
+  file_description
+  file_reference
+  file_size
+  file_version
+  full_path
+  language_code
+  offset
+  parser
+  product_name
+  program_identifier
+  query
+  sha1
+
+windows:registry:amcache:programs
+  data_type
+  entry_type
+  file_paths
+  files
+  language_code
+  msi_package_code
+  msi_product_code
+  name
+  offset
+  package_code
+  parser
+  product_code
+  publisher
+  query
+  uninstall_key
+  version
+
+windows:registry:appcompatcache
+  data_type
+  entry_index
+  key_path
+  offset
+  parser
+  path
+  query
+
+windows:registry:bagmru
+  data_type
+  entries
+  key_path
+  offset
+  parser
+  query
+
+windows:registry:bam
+  binary_path
+  data_type
+  offset
+  parser
+  query
+  user_sid
+
+windows:registry:boot_execute
+  data_type
+  key_path
+  offset
+  parser
+  query
+  value
+
+windows:registry:boot_verification
+  data_type
+  image_path
+  key_path
+  offset
+  parser
+  query
+
+windows:registry:explorer:programcache
+  data_type
+  entries
+  key_path
+  known_folder_identifier
+  offset
+  parser
+  query
+  value_name
+
+windows:registry:installation
+  build_number
+  data_type
+  key_path
+  offset
+  owner
+  parser
+  product_name
+  query
+  service_pack
+  version
+
+windows:registry:key_value
+  data_type
+  key_path
+  offset
+  parser
+  query
+  values
+
+windows:registry:mount_points2
+  data_type
+  key_path
+  label
+  name
+  offset
+  parser
+  query
+  server_name
+  share_name
+  type
+
+windows:registry:mrulist
+  data_type
+  entries
+  key_path
+  offset
+  parser
+  query
+
+windows:registry:mrulistex
+  data_type
+  entries
+  key_path
+  offset
+  parser
+  query
+
+windows:registry:msie_zone_settings
+  data_type
+  key_path
+  offset
+  parser
+  query
+  settings
+
+windows:registry:mstsc:connection
+  data_type
+  entries
+  key_path
+  offset
+  parser
+  query
+  username
+
+windows:registry:mstsc:mru
+  data_type
+  entries
+  key_path
+  offset
+  parser
+  query
+
+windows:registry:network
+  connection_type
+  data_type
+  default_gateway_mac
+  description
+  dns_suffix
+  offset
+  parser
+  query
+  ssid
+
+windows:registry:network_drive
+  data_type
+  drive_letter
+  key_path
+  offset
+  parser
+  query
+  server_name
+  share_name
+
+windows:registry:office_mru
+  data_type
+  key_path
+  offset
+  parser
+  query
+  value_string
+
+windows:registry:office_mru_list
+  data_type
+  entries
+  key_path
+  offset
+  parser
+  query
+
+windows:registry:outlook_search_mru
+  data_type
+  entries
+  key_path
+  offset
+  parser
+  query
+
+windows:registry:run
+  data_type
+  entries
+  key_path
+  offset
+  parser
+  query
+
+windows:registry:sam_users
+  account_rid
+  comments
+  data_type
+  fullname
+  key_path
+  login_count
+  offset
+  parser
+  query
+  username
+
+windows:registry:service
+  data_type
+  error_control
+  image_path
+  key_path
+  name
+  object_name
+  offset
+  parser
+  query
+  service_dll
+  service_type
+  start_type
+  values
+
+windows:registry:shutdown
+  data_type
+  key_path
+  offset
+  parser
+  query
+  value_name
+
+windows:registry:timezone
+  configuration
+  data_type
+  key_path
+  offset
+  parser
+  query
+
+windows:registry:typedurls
+  data_type
+  entries
+  key_path
+  offset
+  parser
+  query
+
+windows:registry:usb
+  data_type
+  key_path
+  offset
+  parser
+  product
+  query
+  serial
+  subkey_name
+  vendor
+
+windows:registry:usbstor
+  data_type
+  device_type
+  display_name
+  key_path
+  offset
+  parent_id_prefix
+  parser
+  product
+  query
+  revision
+  serial
+  subkey_name
+  vendor
+
+windows:registry:userassist
+  application_focus_count
+  application_focus_duration
+  data_type
+  entry_index
+  key_path
+  number_of_executions
+  offset
+  parser
+  query
+  value_name
+
+windows:registry:winlogon
+  application
+  command
+  data_type
+  handler
+  key_path
+  offset
+  parser
+  query
+  trigger
+
+windows:restore_point:info
+  data_type
+  description
+  offset
+  parser
+  query
+  restore_point_event_type
+  restore_point_type
+  sequence_number
+
+windows:shell_item:file_entry
+  data_type
+  file_reference
+  localized_name
+  long_name
+  name
+  offset
+  origin
+  parser
+  query
+  shell_item_path
+
+windows:srum:application_usage
+  application
+  background_bytes_read
+  background_bytes_written
+  background_context_switches
+  background_cycle_time
+  background_number_for_flushes
+  background_number_for_read_operations
+  background_number_for_write_operations
+  data_type
+  face_time
+  foreground_bytes_read
+  foreground_bytes_written
+  foreground_context_switches
+  foreground_cycle_time
+  foreground_number_for_flushes
+  foreground_number_for_read_operations
+  foreground_number_for_write_operations
+  identifier
+  offset
+  parser
+  query
+  user_identifier
+
+windows:srum:network_connectivity
+  application
+  data_type
+  identifier
+  interface_luid
+  l2_profile_flags
+  l2_profile_identifier
+  offset
+  parser
+  query
+  user_identifier
+
+windows:srum:network_usage
+  application
+  bytes_received
+  bytes_sent
+  data_type
+  identifier
+  interface_luid
+  l2_profile_flags
+  l2_profile_identifier
+  offset
+  parser
+  query
+  user_identifier
+
+windows:tasks:job
+  application
+  comment
+  data_type
+  offset
+  parameters
+  parser
+  query
+  trigger_type
+  username
+  working_directory
+
+windows:timeline:generic
+  application_display_name
+  data_type
+  description
+  offset
+  package_identifier
+  parser
+  query
+
+windows:timeline:user_engaged
+  active_duration_seconds
+  data_type
+  offset
+  package_identifier
+  parser
+  query
+  reporting_app
+
+windows:volume:creation
+  data_type
+  device_path
+  offset
+  origin
+  parser
+  query
+  serial_number
+
+winrar:history
+  data_type
+  entries
+  key_path
+  offset
+  parser
+  query
+
+xchat:log:line
+  data_type
+  nickname
+  offset
+  parser
+  query
+  text
+
+xchat:scrollback:line
+  data_type
+  nickname
+  offset
+  parser
+  query
+  text
+
+zeitgeist:activity
+  data_type
+  offset
+  parser
+  query
+  subject_uri
